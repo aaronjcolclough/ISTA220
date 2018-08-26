@@ -1,0 +1,51 @@
+using System;
+
+namespace Recursive_Methods
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double start = 0;
+            double sum = 0;
+            get_sum(start, sum);
+        }
+
+        private static void get_sum(double start, double sum)
+        {
+            start = start + 1;
+            Console.WriteLine($"Enter grade {start}");
+            string g = Console.ReadLine();
+            double g1 = double.Parse(g);
+            sum = sum + g1;
+            if (g1 == -1)
+            {
+                Console.WriteLine($"The sum is {sum}");
+                get_ave(sum, start);
+            }
+            else
+            {
+                get_sum(start, sum);
+            }
+        }
+
+        private static void get_ave(double sum, double start)
+        {
+            double ave = sum / start;
+            Console.WriteLine($"The average is {ave}");
+            char lettergrade = getletter(ave);
+            Console.WriteLine($"The grade is {lettergrade}");
+        }
+
+        private static char getletter(double ave)
+        {
+            if (ave >= 90) return 'A';
+            else if (ave >= 80) return 'B';
+            else if (ave >= 70) return 'C';
+            else if (ave >= 60) return 'D';
+            else return 'F';
+        }
+    }
+
+
+}
