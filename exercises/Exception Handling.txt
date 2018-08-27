@@ -129,7 +129,7 @@ namespace Exception_Handling
 
             if (r1 <= 0)
             {
-                throw new ArgumentOutOfRangeException("radius", "Must have a radius length of 1 or greater.");
+                throw new ArgumentOutOfRangeException("radius", "Must have a radius greater than 0.");
             }
 
             float area1 = 2 * (float) Math.PI * r1;
@@ -148,7 +148,7 @@ namespace Exception_Handling
 
             if (r2 <= 0)
             {
-                throw new ArgumentOutOfRangeException("radius", "Must have a radius length of 1 or greater.");
+                throw new ArgumentOutOfRangeException("radius", "Must have a radius greater than 0.");
             }
             float volume = (float)((4.0 / 3.0) * Math.PI * Math.Pow(r2, 3)) / 2;
             Console.WriteLine($"The volume of a hemisphere of the circle is {volume}.");
@@ -164,7 +164,7 @@ namespace Exception_Handling
 
             if (s1 <= 0)
             {
-                throw new ArgumentOutOfRangeException("side 1", "Must have a length of 1 or greater.");
+                throw new ArgumentOutOfRangeException("side 1", "Must have a length greater than 0.");
             }
 
             Console.WriteLine("Enter length of second side:");
@@ -173,7 +173,7 @@ namespace Exception_Handling
 
             if (s2 <= 0)
             {
-                throw new ArgumentOutOfRangeException("side 2", "Must have a length of 1 or greater.");
+                throw new ArgumentOutOfRangeException("side 2", "Must have a length greater than 0.");
             }
 
             Console.WriteLine("Enter length of third side:");
@@ -182,7 +182,7 @@ namespace Exception_Handling
 
             if (s3 <= 0)
             {
-                throw new ArgumentOutOfRangeException("side 3", "Must have a length of 1 or greater.");
+                throw new ArgumentOutOfRangeException("side 3", "Must have a length greater than 0.");
             }
 
             float p =  (float) (s1 + s2 + s3) / 2;
