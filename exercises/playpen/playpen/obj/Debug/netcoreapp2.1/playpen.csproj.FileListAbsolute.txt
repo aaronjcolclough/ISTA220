@@ -1,0 +1,11 @@
+D:\ISTA\ISTA220\Exercises\playpen\playpen\bin\Debug\netcoreapp2.1\playpen.deps.json
+D:\ISTA\ISTA220\Exercises\playpen\playpen\bin\Debug\netcoreapp2.1\playpen.runtimeconfig.json
+D:\ISTA\ISTA220\Exercises\playpen\playpen\bin\Debug\netcoreapp2.1\playpen.runtimeconfig.dev.json
+D:\ISTA\ISTA220\Exercises\playpen\playpen\bin\Debug\netcoreapp2.1\playpen.dll
+D:\ISTA\ISTA220\Exercises\playpen\playpen\bin\Debug\netcoreapp2.1\playpen.pdb
+D:\ISTA\ISTA220\Exercises\playpen\playpen\obj\Debug\netcoreapp2.1\playpen.csprojAssemblyReference.cache
+D:\ISTA\ISTA220\Exercises\playpen\playpen\obj\Debug\netcoreapp2.1\playpen.csproj.CoreCompileInputs.cache
+D:\ISTA\ISTA220\Exercises\playpen\playpen\obj\Debug\netcoreapp2.1\playpen.AssemblyInfoInputs.cache
+D:\ISTA\ISTA220\Exercises\playpen\playpen\obj\Debug\netcoreapp2.1\playpen.AssemblyInfo.cs
+D:\ISTA\ISTA220\Exercises\playpen\playpen\obj\Debug\netcoreapp2.1\playpen.dll
+D:\ISTA\ISTA220\Exercises\playpen\playpen\obj\Debug\netcoreapp2.1\playpen.pdb
