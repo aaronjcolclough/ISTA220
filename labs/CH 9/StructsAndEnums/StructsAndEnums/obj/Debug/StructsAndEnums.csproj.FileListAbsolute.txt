@@ -1,0 +1,7 @@
+D:\ISTA\ISTA220\Labs\CH 9\StructsAndEnums\StructsAndEnums\bin\Debug\StructsAndEnums.exe.config
+D:\ISTA\ISTA220\Labs\CH 9\StructsAndEnums\StructsAndEnums\bin\Debug\StructsAndEnums.exe
+D:\ISTA\ISTA220\Labs\CH 9\StructsAndEnums\StructsAndEnums\bin\Debug\StructsAndEnums.pdb
+D:\ISTA\ISTA220\Labs\CH 9\StructsAndEnums\StructsAndEnums\obj\Debug\StructsAndEnums.csprojAssemblyReference.cache
+D:\ISTA\ISTA220\Labs\CH 9\StructsAndEnums\StructsAndEnums\obj\Debug\StructsAndEnums.csproj.CoreCompileInputs.cache
+D:\ISTA\ISTA220\Labs\CH 9\StructsAndEnums\StructsAndEnums\obj\Debug\StructsAndEnums.exe
+D:\ISTA\ISTA220\Labs\CH 9\StructsAndEnums\StructsAndEnums\obj\Debug\StructsAndEnums.pdb

@@ -6,27 +6,39 @@ namespace Animal_Farm
     {
         static void Main(string[] args)
         {
-            //int start = 2;
-            Console.WriteLine("0, 1");
-            fibonacci(0, 1, 2);            
+            int[] greg = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            int[,] enzo = new int[3, 3];
+
+            for (int i = 0; i < greg.Length / 3; i++)
+            {
+                for (int j = 0; j < enzo.Length / 3; j++)
+                {
+                    enzo[i,j] = greg[3 * i + j];
+                    Console.Write($"{enzo[i,j]}");
+                }
+                Console.WriteLine($"");                
+            }
+            
+            for (int i = 0; i < enzo.Length; i++)
+            {
+                int x = i / 3;
+                int y = i % 3;
+                Console.Write($"{enzo[x, y]} ");
+            }
+            Console.WriteLine("");
+
+            int[,] fab = new int[3,3];
+            for (int i = 0; i < 9; i++)
+            {
+                /*int x = i % 3;
+                int y = i / 3;*/
+                fab[i%3,i/3] = greg[i];
+                Console.Write($"{fab[i/3,i%3]} ");
+
+
+            }
+            
         }
 
-        private static void fibonacci(int v1, int v2, int start)
-        {
-            start++;
-            int end = 9;
-            int sum = v1 + v2;            
-
-            if (start < end)
-            {
-                Console.WriteLine($"{v2}, {sum}");
-                fibonacci(v2, sum, start);                                
-            }
-            else
-            {
-                Console.WriteLine($"{v2}, {sum}");
-                Console.WriteLine($"Number {start} in the Fibonacci Sequence is {sum}");
-            }
-        }
     }
 }
