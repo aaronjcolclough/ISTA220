@@ -1,7 +1,0 @@
-D:\ISTA\ISTA220\Labs\CH 8\Parameters\Parameters\bin\Debug\Parameters.exe.config
-D:\ISTA\ISTA220\Labs\CH 8\Parameters\Parameters\bin\Debug\Parameters.exe
-D:\ISTA\ISTA220\Labs\CH 8\Parameters\Parameters\bin\Debug\Parameters.pdb
-D:\ISTA\ISTA220\Labs\CH 8\Parameters\Parameters\obj\Debug\Parameters.csprojAssemblyReference.cache
-D:\ISTA\ISTA220\Labs\CH 8\Parameters\Parameters\obj\Debug\Parameters.csproj.CoreCompileInputs.cache
-D:\ISTA\ISTA220\Labs\CH 8\Parameters\Parameters\obj\Debug\Parameters.exe
-D:\ISTA\ISTA220\Labs\CH 8\Parameters\Parameters\obj\Debug\Parameters.pdb

@@ -1,1 +1,0 @@
-D:\ISTA\ISTA220\Labs\CH 5\DoStatement\DoStatement\DoStatement.csproj;x86

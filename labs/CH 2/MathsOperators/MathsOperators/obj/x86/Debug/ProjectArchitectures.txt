@@ -1,1 +1,0 @@
-D:\ISTA220\Labs\CH 2\MathsOperators\MathsOperators\MathsOperators.csproj;x86
