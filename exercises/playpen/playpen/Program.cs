@@ -6,7 +6,7 @@ namespace Animal_Farm
     {
         static void Main(string[] args)
         {
-            int[] greg = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            /*int[] greg = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
             int[,] enzo = new int[3, 3];
 
             for (int i = 0; i < greg.Length / 3; i++)
@@ -30,15 +30,19 @@ namespace Animal_Farm
             int[,] fab = new int[3,3];
             for (int i = 0; i < 9; i++)
             {
-                /*int x = i % 3;
-                int y = i / 3;*/
+                int x = i % 3;
+                int y = i / 3;
                 fab[i%3,i/3] = greg[i];
                 Console.Write($"{fab[i/3,i%3]} ");
 
 
-            }
-            
+            }*/
+            Console.WriteLine("Enter Year:");
+            int cent = Convert.ToInt32(Console.ReadLine());
+            int cent2 = (cent / 100) + 1;
+            Console.WriteLine($"It's the {cent2} st/rd century.");
         }
 
+        
     }
 }
