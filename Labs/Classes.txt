@@ -1,0 +1,77 @@
+#region Using directives
+
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+#endregion
+
+namespace Classes
+{
+    class Point
+    {
+        private int x, y;
+        private static int objectCount = 0;
+
+        public Point()
+        {
+            this.x = -1;
+            this.y = -1;
+            objectCount++;
+        }
+        public Point(int x, int y)
+        {
+            this.x = x;
+            this.y = y;
+            objectCount++;
+        }
+        public double DistanceTo(Point other)
+        {
+            int xDiff = this.x - other.x;
+            int yDiff = this.y - other.y;
+            double distance = Math.Sqrt((xDiff * xDiff) + (yDiff * yDiff));
+            return distance;
+        }
+
+        public static int ObjectCount()
+        {
+            return objectCount;
+        }
+    }
+}
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Classes
+{
+    class Program
+    {
+        static void doWork()
+        {
+            Point origin = new Point();
+            Point bottomRight = new Point(1366, 768);
+            double distance = origin.DistanceTo(bottomRight);
+            Console.WriteLine($"Distance is: {distance}");
+            int oc = Point.ObjectCount();
+            Console.WriteLine($"Number of Point objects: {Point.ObjectCount()}");
+        }
+
+        static void Main(string[] args)
+        {
+            try
+            {
+                doWork();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+    }
+}
