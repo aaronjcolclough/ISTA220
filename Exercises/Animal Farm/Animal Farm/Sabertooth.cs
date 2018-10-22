@@ -4,26 +4,28 @@ using System.Text;
 
 namespace Animal_Farm
 {
-    class Sabertooth
+    class Sabertooth : Animal
     {
-        public string name = "Victor";
-
-        public string speak()
+        public override string name()
+        {
+            return "Victor";
+        }
+        public override string speak()
         {
             return "You'll pay me how much?";
         }
 
-        public string drink()
+        public override string drink()
         {
             return "Victor steals one of James' beers and crushes it in his mouth.";
         }
 
-        public string fight()
+        public override string fight()
         {
             return "Victor lunges at James, teeth and claws exposed.";
         }
 
-        public string rest()
+        public override string rest()
         {
             return "Victor finds a spot in the shade and lays down.";
         }

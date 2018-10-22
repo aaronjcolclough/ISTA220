@@ -17,43 +17,23 @@ namespace Animal_Farm
 
             if (menu.ToLower() == "wolverine")
             {
-                Wolverine James = new Wolverine();
-                object speak = James.speak();
-                object drink = James.drink();
-                object fight = James.fight();
-                object rest = James.rest();
-                string name = James.name;
-                able(speak, drink, fight, rest, name);
+                Wolverine James = new Wolverine();                
+                able(James);
             }
             else if (menu.ToLower() == "beast")
             {
                 Beast Hank = new Beast();
-                object speak = Hank.speak();
-                object drink = Hank.drink();
-                object fight = Hank.fight();
-                object rest = Hank.rest();
-                string name = Hank.name;
-                able(speak, drink, fight, rest, name);
+                able(Hank);
             }
             else if (menu.ToLower() == "sabertooth")
             {
                 Sabertooth Victor = new Sabertooth();
-                object speak = Victor.speak();
-                object drink = Victor.drink();
-                object fight = Victor.fight();
-                object rest = Victor.rest();
-                string name = Victor.name;
-                able(speak, drink, fight, rest, name);
+                able(Victor);
             }
             else if (menu.ToLower() == "toad")
             {
-                Toad Mortimer = new Toad();
-                object speak = Mortimer.speak();
-                object drink = Mortimer.drink();
-                object fight = Mortimer.fight();
-                object rest = Mortimer.rest();
-                string name = Mortimer.name;
-                able(speak, drink, fight, rest, name);
+                Toad Mortimer = new Toad();                
+                able(Mortimer);
             }
             else
             {
@@ -62,46 +42,46 @@ namespace Animal_Farm
             }
         }
 
-        private static void able(object speak, object drink, object fight, object rest, string name)
+        private static void able(Animal animal)
         {
-            Console.WriteLine($"What would you like {name} to do? He can speak, drink, fight, and rest.");
+            Console.WriteLine($"What would you like {animal.name()} to do? He can speak, drink, fight, and rest.");
             string action = Console.ReadLine();
 
             if (action.ToLower() == "speak")
             {
-                Console.WriteLine($"{name}: {speak}");
-                choice(speak, drink, fight, rest, name);                
+                Console.WriteLine($"{animal.name()}: {animal.speak()}");
+                choice(animal);                
             }
             else if (action.ToLower() == "drink")
             {
-                Console.WriteLine($"{name}: {drink}");
-                choice(speak, drink, fight, rest, name);                
+                Console.WriteLine($"{animal.name()}: {animal.drink()}");
+                choice(animal);                
             }
             else if (action.ToLower() == "fight")
             {
-                Console.WriteLine($"{name}: {fight}");
-                choice(speak, drink, fight, rest, name);                
+                Console.WriteLine($"{animal.name()}: {animal.fight()}");
+                choice(animal);                
             }
             else if (action.ToLower() == "rest")
             {
-                Console.WriteLine($"{name}: {rest}");
-                choice(speak, drink, fight, rest, name);
+                Console.WriteLine($"{animal.name()}: {animal.rest()}");
+                choice(animal);
             }
             else
             {
                 Console.WriteLine("He can't do that. Try again.");
-                able(speak, drink, fight, rest, name);
+                able(animal);
             }
         }
 
-        private static void choice(object speak, object drink, object fight, object rest, string name)
+        private static void choice(Animal animal)
         {
             Console.WriteLine("Do you want to see him do anything else?");
             string ans = Console.ReadLine();
 
             if (ans.ToLower() == "yes")
             {
-                able(speak, drink, fight, rest, name);
+                able(animal);
             }
             else if (ans.ToLower() == "no")
             {

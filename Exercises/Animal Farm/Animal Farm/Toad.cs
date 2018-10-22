@@ -4,26 +4,28 @@ using System.Text;
 
 namespace Animal_Farm
 {
-    class Toad
+    class Toad : Animal
     {
-        public string name = "Mortimer";
-
-        public string speak()
+        public override string name()
+        {
+            return "Mortimer";
+        }
+        public override string speak()
         {
             return "I'm basically useless.";
         }
 
-        public string drink()
+        public override string drink()
         {
             return "Nope, can't do that.";
         }
 
-        public string fight()
+        public override string fight()
         {
             return "Can't do that either.";
         }
 
-        public string rest()
+        public override string rest()
         {
             return "I suck.";
         }
